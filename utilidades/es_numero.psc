@@ -1,4 +1,4 @@
-Funcion R <- EsNumero(Cadena)
+Funcion R <- ES_NUMERO(Cadena)
 	Definir Contador Como Entero
 	Dimension Numeros[10]
 	
@@ -37,49 +37,49 @@ Algoritmo Test
 	case6 = "+0"
 	case7 = "-2"
 	
-	Si EsNumero(case1)
+	Si ES_NUMERO(case1)
 		Escribir "TEST 1 [PASS]"
 		
 	SiNo
 		Escribir "TEST 1 [FAIL]"
 	FinSi
 	
-	Si !EsNumero(case2)
+	Si !ES_NUMERO(case2)
 		Escribir "TEST 2 [PASS]"
 		
 	SiNo
 		Escribir "TEST 2 [FAIL]"
 	FinSi
 	
-	Si EsNumero(case3)
+	Si ES_NUMERO(case3)
 		Escribir "TEST 3 [PASS]"
 		
 	SiNo
 		Escribir "TEST 3 [FAIL]"
 	FinSi
 	
-	Si EsNumero(case4)
+	Si ES_NUMERO(case4)
 		Escribir "TEST 4 [PASS]"
 		
 	SiNo
 		Escribir "TEST 4 [FAIL]"
 	FinSi
 	
-	Si !EsNumero(case5)
+	Si !ES_NUMERO(case5)
 		Escribir "TEST 5 [PASS]"
 		
 	SiNo
 		Escribir "TEST 5 [FAIL]"
 	FinSi
 	
-	Si EsNumero(case6)
+	Si ES_NUMERO(case6)
 		Escribir "TEST 6 [PASS]"
 		
 	SiNo
 		Escribir "TEST 6 [FAIL]"
 	FinSi
 	
-	Si EsNumero(case7)
+	Si ES_NUMERO(case7)
 		Escribir "TEST 7 [PASS]"
 		
 	SiNo
