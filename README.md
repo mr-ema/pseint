@@ -54,10 +54,17 @@ FinFuncion
 </br>
 
 ### Efecto Typing
-Esta funcion toma una `Cadena` e itera sobre ella imprimiento cada caracter en pantalla con cierto delay en ms.
+Esta funcion toma una `Cadena` e itera sobre ella imprimiento cada caracter en pantalla con cierto `Delay` en `ms`.
+
+El `Delay` es calculando tomando toda la cadena. Es decir que si le pasas un delay de `500ms` se tardara
+`0.5 segundos` en imprimir todo el texto.
+
+</br>
 
 ```psc
 Funcion EFECTO_TYPING(Cadena, Delay)
+	
+	Delay = Delay / Longitud(Cadena)
 	
 	// Aveces Las Cadenas Empiezan En 0. Si Es El Caso Remplaza el 1 con el 0
 	Para i Desde 1 Hasta Longitud(Cadena) Hacer
@@ -69,3 +76,4 @@ Funcion EFECTO_TYPING(Cadena, Delay)
 	
 FinFuncion
 ```
+
