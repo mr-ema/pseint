@@ -77,12 +77,12 @@ FinFuncion
 
 </br>
 
-Si quieres pasar mas de un parametro por ejemplo: 
+En caso de que quieras pasar mas de un parametro por ejemplo: 
 
 ```psc
 EFECTO_TYPING("Hola", Alguna_Variable, 1200); // Error
 
-// Esto resultara en un error ya que en `PSeInt` no puedes tomar argumentos infinitos.
+// Esto resultara en un error ya que en `PSeInt` no puedes tomar parametros infinitos.
 
 // Por lo que una solucion a esto es hacer lo siguiente:
 mensaje = CONCATENAR("Hola Que Tal", Alguna_Variable, 1200);
@@ -92,8 +92,6 @@ EFECTO_TYPING(mensaje, 1200);
 EFECTO_TYPING( CONCATENAR("Hola Que Tal", Alguna_Variable, 1200) );
 
 // Y si es un numero:
-EFECTO_TYPING( CONCATENAR("Hola Que Tal", CONVERTIRANUMERO(Alguna_Variable), 1200) );
+EFECTO_TYPING( CONCATENAR("Hola Que Tal", CONVERTIRATEXTO(Alguna_Variable), 1200) );
 ```
-
-</br>
 
