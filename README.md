@@ -7,12 +7,16 @@ chequear si el input es un numero valido para evitar que el programa se rompa.
 ## Navegacion
 - [Validar Numero](https://github.com/mr-ema/pseint#validar-numero)
 - [Invertir Cadena](https://github.com/mr-ema/pseint#invertir-cadena)
+- [Invertir Arreglo](https://github.com/mr-ema/pseint#invertir-arreglo)
 - [Efecto Typing](https://github.com/mr-ema/pseint#efecto-typing)
 
 </br>
 </br>
 
 ## Utilidades
+Funciones utiles como por ejemplo chequear si el input del usuario es un numero valido para evitar que el programa se rompa.
+
+</br>
 
 ### Validar Numero
 Esta funcion toma una `Cadena` e itera sobre ella comprobando que contenga solo numeros. Finalmente returna `Verdadero` o `Falso`.
@@ -67,6 +71,27 @@ Funcion R <- INVERTIR_CADENA(Cadena)
 	FinPara
 	
 	R <- temp;
+	
+FinFuncion
+```
+
+</br>
+
+### Invertir Arreglo
+Esta funcion toma un `Arreglo` y su tamaño e invierte el orden de todos su elementos. \
+Ten en cuenta que el arreglo que le pases sera modificado debido a que es pasado por referencia
+
+```psc
+Funcion INVERTIR_ARR(Arr Por Referencia, N)
+	Dimension  temp[N];
+	
+	Para i <- N Hasta 1 Hacer
+		temp[i] = Arr[i];
+	FinPara
+	
+	Para i <- 1 Hasta N Hacer
+		Arr[i] = temp[(N+1) - i]
+	FinPara
 	
 FinFuncion
 ```
