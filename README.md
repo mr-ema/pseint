@@ -5,7 +5,8 @@ chequear si el input es un numero valido para evitar que el programa se rompa.
 </br>
 
 ## Navegacion
-- [Validar Numero](https://github.com/mr-ema/pseint#verificar-si-input-es-un-numero)
+- [Validar Numero](https://github.com/mr-ema/pseint#validar-numero)
+- [Invertir Cadena](https://github.com/mr-ema/pseint#invertir-cadena)
 - [Efecto Typing](https://github.com/mr-ema/pseint#efecto-typing)
 
 </br>
@@ -13,7 +14,7 @@ chequear si el input es un numero valido para evitar que el programa se rompa.
 
 ## Utilidades
 
-### Verificar Si Input Es Un Numero
+### Validar Numero
 Esta funcion toma una `Cadena` e itera sobre ella comprobando que contenga solo numeros. Finalmente returna `Verdadero` o `Falso`.
 
 ```psc
@@ -51,6 +52,25 @@ Funcion R <- ES_NUMERO(Cadena)
 	
 FinFuncion
 ```
+
+</br>
+
+### Invertir Cadena
+Esta funcion toma una `Cadena` y returna una copia invertida de la `Cadena`
+
+```psc
+Funcion R <- INVERTIR_CADENA(Cadena)
+	temp = "";
+	
+	para i <- Longitud(Cadena) Hasta 1 Con Paso -1 Hacer
+		temp = Concatenar(temp, Subcadena(Cadena, i, i));
+	FinPara
+	
+	R <- temp;
+	
+FinFuncion
+```
+
 </br>
 
 ### Efecto Typing
